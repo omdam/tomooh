@@ -1,0 +1,60 @@
+// .pagenation-om {
+//     display        : flex;
+//     justify-content: center;
+//     align-items    : center;
+//     flex-wrap      : wrap;
+//     margin-top     : 10px;
+
+//     .li-om {
+//         margin: 0 7px;
+//     }
+
+//     .link-om {
+
+//         width          : 55px;
+//         height         : 55px;
+//         border-radius  : 5px;
+//         display        : flex;
+//         align-items    : center;
+//         justify-content: center;
+//         border         : 1px solid $h_color_1;
+//         font-size      : 24px;
+//         font-weight    : 800;
+//         color          : $h_color_1;
+//         margin-bottom  : 10px;
+//         transition     : 0.5s;
+
+//         @include sm {
+//             width  : 40px;
+//             height : 40px;
+//             padding: 0;
+//         }
+
+//         &.prev-om,
+//         &.next-om,
+//         &.active,
+//         &:hover {
+//             border-color    : $color_2;
+//             background-color: $color_2;
+//             color           : #fff;
+//         }
+
+//         &.prev-om {
+
+//             transform: rotateY(180deg);
+
+//             @include dir {
+//                 transform: none;
+//             }
+//         }
+
+//         &.next-om {
+//             transform: rotateY(0);
+
+//             @include dir {
+//                 transform: rotateY(180deg);
+//             }
+//         }
+//     }
+
+// }

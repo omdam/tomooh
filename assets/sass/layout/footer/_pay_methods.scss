@@ -1,0 +1,8 @@
+.footer-pay-methods-block {
+    min-height: 23px;
+
+    @include sm {
+        display: flex;
+        justify-content: center;
+    }
+}

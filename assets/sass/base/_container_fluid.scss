@@ -1,0 +1,12 @@
+.container-fluid {
+    width: 100%;
+    padding-right: 25px;
+    padding-left: 25px;
+    margin-right: auto;
+    margin-left: auto;
+
+    @include sm {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}

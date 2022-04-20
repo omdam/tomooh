@@ -1,0 +1,42 @@
+.footer-contacts-section-om {
+    background-color: $color_1_darker;
+    padding: 40px 0;
+
+    @include sm {
+        padding: 30px 0;
+    }
+    .footer-row-om {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @include sm {
+            flex-direction: column;
+        }
+
+        .col-om {
+        }
+    }
+}
+
+.footer-main-section-om {
+    padding: 50px 0;
+    background-color: $color_1;
+
+    @include sm {
+        padding: 30px 0;
+    }
+}
+
+.footer-copyriths-om {
+    background-color: $color_1_darker;
+    padding: 10px 0;
+
+    .row-om {
+        align-items: center;
+        justify-content: space-between;
+
+        .col-om {
+        }
+    }
+}

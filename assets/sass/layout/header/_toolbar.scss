@@ -1,0 +1,154 @@
+.toolbar-om {
+
+    background-color: $color_1;
+    padding         : 10px 0;
+
+    .ss-wraper-om {}
+
+    .tt-contact-om {
+        display    : flex;
+        align-items: center;
+
+        @include sm {
+            flex-direction : column;
+            justify-content: center;
+        }
+
+        .li-om {
+            position: relative;
+            display : inline-flex;
+
+            @include sm {
+                margin-bottom: 10px;
+            }
+
+            &:not(:last-child) {
+                &::after {
+                    content         : "";
+                    display         : inline-flex;
+                    width           : 1px;
+                    height          : 26px;
+                    margin          : 0 20px;
+                    opacity         : 0.1;
+                    background-color: #ffffff;
+
+                    @include sm {
+                        display: none;
+                    }
+                }
+            }
+
+        }
+
+        .contact-block {
+            display      : flex;
+            align-items  : center;
+            color        : #fff;
+            margin-bottom: 0;
+            font-size    : 12px;
+            font-weight  : normal;
+            font-style   : normal;
+
+            .figure-om {
+                margin-inline-end: 10px;
+            }
+
+            &.phone-block {
+                font-weight: 500;
+
+                &:hover {
+                    opacity: 0.7;
+                }
+            }
+
+            .telphone-om {
+                direction: ltr;
+            }
+        }
+    }
+
+    .tt-lang-soicial-om {
+        display    : flex;
+        align-items: center;
+
+        @include sm {
+            // display: block;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .tt-lang-sec-om {
+            display: inline-flex;
+
+            &::after {
+                content         : "";
+                display         : inline-flex;
+                width           : 1px;
+                height          : 26px;
+                margin          : 0 20px;
+                opacity         : 0.1;
+                background-color: #ffffff;
+
+                // @include sm {
+                //     content: none;
+                //     display: none;
+                // }
+            }
+
+            @include sm {
+                // display: none;
+            }
+
+
+            >.link-om {
+                display       : flex;
+                align-items   : center;
+                flex-direction: row-reverse;
+                color         : #fff;
+                font-size     : 12px;
+
+
+                .figure-om {
+                    margin-inline-start: 8px;
+                }
+            }
+        }
+   
+        .tt-social-om {
+            display      : flex;
+            align-items  : center;
+            margin-bottom: 0;
+
+        
+
+            // @include sm {
+            //     justify-content: center;
+            // }
+
+            .link-om {
+                transition: 0.5s;
+
+                &:not(:last-child) {
+                    margin-inline-end: 20px;
+                }
+
+                &:hover {
+                    opacity: 0.7;
+                }
+
+                .figure-om {
+                    color: #fff;
+
+                    svg {
+                        fill: #fff;
+                    }
+                }
+
+            }
+        }
+
+        .tt-currency-sec-om {
+     
+        }
+    }
+}

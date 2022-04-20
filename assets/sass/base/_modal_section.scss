@@ -1,0 +1,22 @@
+.modal-section-om {
+    .modal-content {
+        padding: 30px;
+        border-radius: 25px;
+    }
+
+    .close-butt-om {
+        top: 20px;
+        right: 20px;
+
+        @include dir {
+            left: 20px;
+            right: unset;
+        }
+
+        &::after,
+        &::before {
+            background-color: rgba(64, 69, 83, 0.66);
+            height: 14px;
+        }
+    }
+}

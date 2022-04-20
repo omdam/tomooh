@@ -1,0 +1,124 @@
+.cart-order-summary-sec-om {
+    padding      : 15px;
+    margin-bottom: 30px;
+
+    .cart-order-head-om {
+        font-size    : 16px;
+        font-weight  : 500;
+        color        : $h_color_2;
+        margin-bottom: 15px;
+    }
+}
+
+.cart-order-copun-input-om {
+    display      : flex;
+    align-items  : center;
+    margin-bottom: 15px;
+
+    .input-om {
+        height       : 40px;
+        flex-grow    : 1;
+        margin-bottom: 0;
+    }
+
+    .submit-butt-om {
+        height       : 40px;
+        width        : 90px;
+        margin-bottom: 0;
+    }
+}
+
+.cart-order-subtotal-price-block-om {
+    display        : flex;
+    align-items    : center;
+    justify-content: space-between;
+    margin-bottom  : 10px;
+
+    .subtotal-price-head-om,
+    .price-om {
+        font-size  : 14px;
+        font-weight: normal;
+        color      : rgba($h_color_2, 0.65);
+    }
+
+    .price-om {
+        &.colored-price-om {
+            color: $color_2;
+        }
+    }
+}
+
+.cart-order-shipping-block-om {
+    display           : flex;
+    align-items       : center;
+    justify-content   : space-between;
+    // padding-bottom : 10px;
+    // border-bottom  : 1px solid #e8e8e8;
+    margin-bottom     : 11px;
+
+    .shipping-head-om,
+    .price-om {
+        font-size  : 14px;
+        font-weight: normal;
+        color      : rgba($h_color_2, 0.65);
+    }
+
+    .free-shipping-om {
+        color: $color_2;
+    }
+}
+
+
+.cart-order-congrates-copun-disc-om {
+    display         : flex;
+    align-items     : center;
+    height          : 28px;
+    background-color: #f5f7fe;
+    border    : 1px solid $color_2;
+    color           : $color_2;
+    font-size       : 14px;
+    font-weight     : 300;
+    padding         : 0 9px;
+    margin-bottom: 10px;
+
+    .figure-om {
+        margin-inline-end: 4.5px;
+    }
+}
+
+.cart-order-total-price-block-om {
+    display        : flex;
+    align-items    : center;
+    justify-content: space-between;
+    margin-bottom  : 15px;
+    padding-top: 15px;
+    border-top: 1px solid #e8e8e8;
+
+    .total-price-head-om,
+    .price-om {
+        font-size  : 14px;
+        font-weight: normal;
+        color      : $h_color_2;
+    }
+
+    .total-price-head-om {
+        .sub-om {
+            color: rgba($h_color_2, 0.65);
+            margin-inline-start: 5px;
+        }
+    }
+
+}
+
+.complete-order-button-om {
+
+    margin-bottom: 0;
+}
+
+.or-text-block-om {
+    display        : flex;
+    align-items    : center;
+    justify-content: center;
+    text-align     : center;
+    margin         : 9px 0 11px;
+}

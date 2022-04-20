@@ -1,0 +1,107 @@
+.site-head-block-om {
+    padding-bottom: 12px;
+    border-bottom: 1px solid #e8e8e8;
+    position: relative;
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &::after {
+        content: "";
+        display: block;
+        width: 57px;
+        height: 4px;
+        background-color: $color_1;
+        position: absolute;
+        bottom: -2px;
+        left: 0;
+        transition: 0.5s;
+
+        @include dir {
+            left: unset;
+            right: 0;
+        }
+    }
+
+    .title-om {
+        font-size: 22px;
+        font-weight: 500;
+        font-stretch: normal;
+        font-style: normal;
+        color: $h_color_1;
+        margin-top: 0;
+        margin-bottom: 0;
+        padding: 0;
+    }
+
+    &.discount_head__ {
+        &::after {
+            background-color: #e61b42;
+        }
+        .title-om {
+            &::before {
+                content: url(../images/discount.svg);
+                -webkit-margin-end: 3.2px;
+                margin-inline-end: 3.2px;
+                max-height: 17px;
+                max-width: 17px;
+                margin-inline-end: 10px;
+            }
+
+            color: #e61b42;
+        }
+    }
+
+    .show-more-link-om {
+        font-size: 16px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #fff;
+        border: 1px solid #e8e8e8;
+        color: $color_1;
+        height: 36px;
+        min-width: 102px;
+        border-radius: 36px;
+
+        &:hover {
+            color: #fff;
+            background-color: $color_1;
+            border-color: $color_1;
+        }
+    }
+
+    .wraper-more-arrows-om {
+        display: flex;
+        align-items: center;
+
+        .show-more-link-om {
+            margin-inline-end: 20px;
+        }
+    }
+
+    .arrows-om {
+        display: flex;
+        align-items: center;
+
+        .swiper-button-next,
+        .swiper-button-prev {
+            margin: 0;
+            position: static;
+            left: unset;
+            right: unset;
+            top: unset;
+            transform: unset;
+            border-radius: 50%;
+
+            @include dir {
+                transform: rotate(180deg);
+            }
+
+            &:first-child {
+                margin-inline-end: 10px;
+            }
+        }
+    }
+}

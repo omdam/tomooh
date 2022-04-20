@@ -1,0 +1,57 @@
+.footer-newsletter-om {
+    @include sm {
+        padding: 20px 0;
+    }
+    .footer-parag-om {
+        margin-bottom: 20px;
+    }
+}
+
+.footer-newsletter-block-om {
+    .newsletter-group-om {
+        display: flex;
+
+        .input-om {
+            margin-bottom: 0;
+            height: 45px;
+            border-radius: 0;
+            border-bottom-left-radius: 25px;
+            border-top-left-radius: 25px;
+
+            @include dir {
+                border-radius: 0;
+                border-bottom-right-radius: 25px;
+                border-top-right-radius: 25px;
+            }
+        }
+
+        .submit-butt-om {
+            min-width: 98px;
+            height: 45px;
+            color: #fff;
+            background-color: $color_2;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            border-top-right-radius: 25px;
+            border-bottom-right-radius: 25px;
+            padding: 0;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 15px;
+            font-weight: bold;
+            margin: 0;
+            width: auto;
+            &:hover {
+                background-color: rgba($color_2, 0.9);
+            }
+
+            @include dir {
+                border-radius: 0;
+                border-top-left-radius: 25px;
+                border-bottom-left-radius: 25px;
+            }
+        }
+    }
+}

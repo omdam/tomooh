@@ -1,0 +1,362 @@
+// .single-product-desc-tabs-section-om {
+//     margin-bottom: 30px;
+
+//     @include sm {
+//         margin-top: 30px;
+//     }
+
+//     .section-wraper-om {
+
+//         padding: 15px 15px 20px;
+//         border : solid 1px #e9e9e9;
+//     }
+
+//     .nav-tabs {
+//         padding-bottom: 15px;
+//         margin-bottom : 20px;
+//         border-bottom : 1px solid #e8e8e8;
+
+//         .nav-item {
+//             &:not(:last-child) {
+//                 margin-inline-end: 10px;
+//             }
+//         }
+
+//         .nav-link {
+//             min-width      : 121px;
+//             height         : 40px;
+//             display        : flex;
+//             justify-content: center;
+//             align-items    : center;
+//             color          : $h_color_1;
+//             border         : none;
+//             font-size      : 16px;
+//             font-weight    : normal;
+//             border-radius  : 0;
+//             padding        : 0 20px;
+
+//             @include xs {
+//                 min-width: 50px;
+//                 font-size: 14px;
+//             }
+
+//             &.active {
+//                 background-color: $color_2;
+//                 color           : #fff;
+//             }
+//         }
+//     }
+
+//     .product-tab-head-om {
+//         font-size    : 16px;
+//         font-weight  : 500;
+//         font-stretch : normal;
+//         font-style   : normal;
+//         color        : $h_color_2;
+//         margin-bottom: 15px;
+//     }
+
+//     .product-overview-list-om {
+//         margin-bottom       : 30px;
+//         padding-inline-start: 17px;
+
+//         .li-om {
+//             color      : #404553;
+//             font-size  : 14px;
+//             font-weight: 300;
+
+//             &:not(:last-child) {
+//                 margin-bottom: 10px;
+//             }
+//         }
+//     }
+
+//     // .product-specifications-head-om {
+//     //     margin-bottom: 15px;
+//     //     font-size    : 16px;
+//     //     font-weight  : normal;
+//     //     color        : $h_color_2;
+//     //     font-weight: 500;
+//     // }
+
+//     .show-allspecs-triger-tab-om {
+//         color           : $h_color_2;
+//         font-size       : 16px;
+//         font-weight     : normal;
+//         display         : table;
+//         margin          : auto;
+//         margin-top      : 25px;
+//         background-color: transparent;
+//         cursor          : pointer;
+
+//         &:hover {
+//             color: $color_2;
+//         }
+//     }
+
+//     .product-specifications-list-om {
+//         margin   : 0 -10px;
+//         display  : flex;
+//         flex-wrap: wrap;
+
+//         @include sm {
+//             margin: 0;
+//         }
+
+//         .li-om {
+//             width  : 50%;
+//             padding: 0 5px;
+
+//             &:nth-last-of-type(even) {
+//                 .specs-block-om {
+//                     @include sm {
+//                         background-color: #f5f7fe;
+//                     }
+//                 }
+//             }
+
+//             @include sm {
+//                 width: 100%;
+//             }
+
+//         }
+
+//         .specs-block-om {
+//             display         : flex;
+//             align-items     : center;
+//             height          : 30px;
+//             flex-wrap       : wrap;
+//             padding         : 5px 10px;
+//             background-color: #fff;
+
+//             &.grey-block-om {
+//                 background-color: #f5f7fe;
+
+//                 @include sm {
+//                     background-color: #fff;
+//                 }
+//             }
+
+//             .head-om,
+//             .parg-om {
+//                 width      : 50%;
+//                 font-size  : 14px;
+//                 font-weight: normal;
+//                 color      : #404553;
+//             }
+
+//         }
+//     }
+
+//     .product-rating-tab-overall-om {
+
+//         display: flex;
+
+//         @include sm {
+//             display: block;
+//         }
+
+//         .heading-block-om {
+//             width: 10%;
+
+//             @include sm {
+//                 width: 100%;
+//             }
+
+//             .product-rating-head-om {
+//                 font-size    : 18px;
+//                 font-weight  : 500;
+//                 color        : $h_color_2;
+//                 margin-bottom: 5px;
+//                 text-align   : center;
+
+//                 @include sm {
+//                     text-align: inherit;
+//                 }
+//             }
+
+//             .all-rate-num-om {
+//                 font-size  : 24px;
+//                 font-weight: bold;
+//                 text-align : center;
+//                 color      : #f7c51e;
+
+//                 @include sm {
+//                     text-align: inherit;
+//                 }
+//             }
+
+//             .rate-block-om {
+//                 display        : flex;
+//                 align-items    : center;
+//                 justify-content: center;
+//                 text-align     : center;
+//                 margin-bottom  : 7px;
+//                 margin-top     : 7px;
+
+//                 @include sm {
+//                     text-align     : inherit;
+//                     justify-content: flex-start;
+//                 }
+
+//                 .figure-om {
+//                     margin-inline-end: 6px;
+//                 }
+
+//                 .rate-text-om {
+//                     margin-inline-end: 6px;
+//                     font-size        : 12px;
+//                     color            : #f7c51e;
+
+//                     &.rate-nums-users-om {
+//                         color: #8d8d8d;
+//                     }
+//                 }
+//             }
+
+//             .rating-count-om {
+//                 color      : #a0a8b7;
+//                 font-size  : 16px;
+//                 font-weight: normal;
+//                 text-align : center;
+
+//                 @include sm {
+//                     text-align: inherit;
+//                 }
+//             }
+//         }
+
+//         .rating-list-count-om {
+//             .rate-persent-block-om {
+//                 display      : flex;
+//                 align-items  : center;
+//                 margin-bottom: 5px;
+
+//                 .stars-num-om {
+//                     font-size        : 14px;
+//                     font-weight      : normal;
+//                     color            : $h_color_2;
+//                     margin-inline-end: 9px;
+//                 }
+
+//                 .figure-om {
+//                     margin-inline-end: 6px;
+//                 }
+
+//                 .rating-percent-block-om {
+//                     display: block;
+
+//                     background-color: #f2f2f2;
+//                     width           : 148px;
+//                     height          : 8px;
+//                     border-radius   : 100px;
+//                     overflow        : hidden;
+//                     position        : relative;
+
+//                     .yello-prcent-block-om {
+//                         display         : block;
+//                         position        : absolute;
+//                         top             : 0;
+//                         right           : 0;
+//                         background-color: #f7c51e;
+//                         width           : 0;
+//                         height          : 100%;
+//                         border-radius   : 100px;
+
+//                         @include dir {
+//                             right: 0;
+//                         }
+//                     }
+//                 }
+
+//                 .num-om {
+//                     font-size          : 14px;
+//                     font-weight        : normal;
+//                     color              : $h_color_2;
+//                     margin-inline-start: 14px;
+//                 }
+//             }
+//         }
+
+//     }
+
+//     .users-rating-sec-om {
+
+//         .users-rating-head-om {
+//             font-size           : 18px;
+//             font-weight         : 500;
+//             color               : $h_color_2;
+//             padding-bottom      : 20px;
+//             margin-top          : 60px;
+//             margin-bottom       : 25px;
+//             border-bottom       : 1px solid #e8e8e8;
+//             padding-inline-start: 12.5px;
+
+//             @include sm {
+//                 margin-top: 30px;
+//             }
+//         }
+
+//         .person-block-om {
+//             display      : flex;
+//             align-items  : center;
+//             margin-bottom: 12px;
+
+//             .avatar-om {
+//                 width            : 52px;
+//                 height           : 52px;
+//                 border-radius    : 50%;
+//                 overflow         : hidden;
+//                 margin-inline-end: 11px;
+//             }
+
+//             .person-name {
+//                 font-size    : 16px;
+//                 font-weight  : 500;
+//                 color        : $h_color_2;
+//                 margin-bottom: 5px;
+//             }
+
+//             .person-rating-stars-om {
+//                 display    : flex;
+//                 align-items: center;
+
+//                 .figure-om {
+//                     width            : 14.9px;
+//                     margin-inline-end: 1.5px;
+
+//                     img {
+//                         width: 100%;
+//                     }
+//                 }
+//             }
+
+//             .date-om {
+//                 margin-top : 5px;
+//                 font-size  : 12px;
+//                 font-weight: normal;
+//                 color      : #8d8d8d;
+//             }
+//         }
+
+//         .person-comment-om {
+//             border-radius   : 5px;
+//             background-color: #f7f7fa;
+//             min-height      : 48px;
+//             display         : inline-flex;
+//             align-items     : center;
+//             color           : $h_color_2;
+//             font-size       : 16px;
+//             font-weight     : normal;
+//             margin-bottom   : 15px;
+//             min-width       : 405px;
+//             padding         : 5px 15px;
+
+//             @include sm {
+//                 min-width: 100%;
+//             }
+//         }
+
+//     }
+
+// }

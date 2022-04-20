@@ -1,0 +1,111 @@
+// header personal data section
+.header-personal-data-om {
+    display    : flex;
+    align-items: center;
+
+    @include sm {
+        justify-content: center;
+    }
+
+    .li-om {
+        display: inline-flex;
+
+        &:not(:last-child) {
+            &::after {
+                content         : "";
+                display         : inline-flex;
+                width           : 1px;
+                height          : 26px;
+                margin          : 0 15px;
+                opacity         : 0.1;
+                background-color: #ffffff;
+            }
+        }
+
+        &.menu-li-om {
+            display: none;
+
+            @include sm {
+                display: inline-flex;
+            }
+        }
+
+    }
+
+    .link-om {
+        color         : #fff;
+        display       : flex;
+        align-items   : center;
+        font-size     : 14px;
+        font-weight   : normal;
+        font-style    : normal;
+        flex-direction: row-reverse;
+
+        &:hover {
+            opacity: 0.7;
+        }
+
+        .text-om {
+            @include xxs {
+                display: none;
+            }
+
+            &.loged-in-text-om {
+                width: 95px;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                white-space: nowrap;
+            }
+
+            &.en-text-om {
+                direction: ltr;
+            }
+        }
+
+        .figure-om {
+            margin-inline-start: 8px;
+
+            @include xxs {
+                margin-inline-start: 0;
+            }
+
+            svg {}
+        }
+
+    }
+
+    // login dropdown 
+    .dropdown-om {
+
+        >a,
+        >.link-om {}
+
+        .sub-menu-om {
+
+            top: 145%;
+
+            .li-om {
+                display: block;
+
+                &:not(:last-child) {
+                    &::after {
+                        content: "";
+                        display: none;
+                    }
+                }
+
+                .link-om {
+                    &.sing-out-link-om {
+                        color: #e61b42;
+                        border-top: 1px solid  #e8e8e8;
+                        margin-top: 12px;
+                        padding-top: 6px;
+                        padding-bottom: 0;
+                    }
+                }
+            }
+
+        }
+
+    }
+}

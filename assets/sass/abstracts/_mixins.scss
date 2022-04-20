@@ -1,0 +1,27 @@
+// media
+@mixin xxs {
+    @media only screen and (max-width: 500px) {
+        @content;
+    }
+}
+@mixin xs {
+    @media only screen and (max-width: 767px) {
+        @content;
+    }
+}
+@mixin sm {
+    @media only screen and (max-width: 991px) {
+        @content;
+    }
+}
+@mixin md {
+    @media only screen and (max-width: 1199px) {
+        @content;
+    }
+}
+
+@mixin dir {
+    html[dir="#{$dir}"] & {
+        @content;
+    }
+}

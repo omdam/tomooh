@@ -1,0 +1,111 @@
+.others-ads-page-section-om {
+    padding-bottom: 30px;
+
+    .product-block-om {
+        .product-img-block {
+            .figure-om {
+                padding-bottom: 58%;
+            }
+        }
+    }
+
+    .spp-result-sort-sec-om {
+        justify-content: flex-end;
+    }
+}
+
+.ads_filters__ {
+    background: #fff;
+    border-radius: 10px;
+    min-height: 212px;
+    border: 1px solid #e8e8e8;
+    padding: 14px 12px;
+    margin-top: 59px;
+
+    @include sm {
+        margin-top: 0;
+        margin-bottom: 30px;
+    }
+    .ads_filter_block_ {
+        display: block;
+        padding: 3px 13px 7px;
+        color: #737373;
+        font-size: 16px;
+        border-radius: 10px;
+        margin-bottom: 5px;
+        text-decoration: none;
+        transition: 0.5s;
+
+        &.active,
+        &:hover {
+            background-color: rgba($color_1, 0.08);
+            color: $color_1;
+        }
+    }
+}
+
+// single others_ads_single_page
+.others_ads_single_page {
+    margin-bottom: 50px;
+
+    .wrapper__ {
+        display: flex;
+        align-items: center;
+        background-color: #fff;
+        border-radius: 10px;
+        border: 1px solid #e8e8e8;
+        overflow: hidden;
+
+        @include sm {
+            display: block;
+        }
+    }
+
+    .img_wrapper_ {
+        width: 283px;
+        margin-inline-end: 65px;
+        .figure-om {
+            padding: 50%;
+        }
+
+        @include sm {
+            width: 100%;
+            margin-inline-end: 0;
+        }
+    }
+
+    .content_wrapper__ {
+        width: calc(100% - 283px);
+        padding: 20px;
+        padding-inline-end: 148px;
+
+        @include sm {
+            width: 100%;
+            padding: 20px;
+        }
+    }
+
+    .head__ {
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+
+    .price__ {
+        color: $color_1;
+        font-size: 18px;
+        margin-bottom: 10px;
+        display: block;
+    }
+
+    .parg__ {
+        font-size: 13px;
+        margin-bottom: 20px;
+    }
+}
+
+.main-others-ads-page-om {
+    .h-choosen-section-om {
+        margin-bottom: 20px;
+    }
+}

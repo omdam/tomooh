@@ -1,0 +1,19 @@
+.footer-download-blocks {
+    display    : flex;
+    align-items: center;
+
+    @include sm {
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    .download-block-om {
+        &:not(:last-child) {
+            margin-inline-end: 14px;
+        }
+        .figure-om {
+            width : 138px;
+            height: 38px;
+        }
+    }
+}

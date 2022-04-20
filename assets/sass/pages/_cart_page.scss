@@ -1,0 +1,134 @@
+.main-cart-page-om {
+    .cart-section-om {
+        .cart-products-content-om {}
+
+        .row-om {
+            margin: 0 -7.5px;
+
+            @include sm {
+                margin: 0;
+                display: block;
+            }
+
+            .col-om {
+                padding: 0 7.5px;
+
+                @include sm {
+                    padding: 0;
+
+                }
+            }
+
+            .col-om-1 {
+                width: 65%;
+
+                @include sm {
+                    width: 100%;
+                }
+            }
+
+            .col-om-2 {
+                width: 35%;
+                
+                @include sm {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+
+.cart-pg-continue-shopping-link-om {
+    min-width    : 128px;
+    margin-bottom: 40px;
+    margin-top   : 10px;
+    display      : inline-flex;
+    width        : auto;
+
+}
+
+.cart-pg-favorite-section-om {
+    margin-bottom: 20px;
+    .cart-favorite-title-om {
+        margin-bottom: 25px;
+        color        : $h_color_2;
+        font-size    : 20px;
+        font-weight  : 500;
+
+        .sub-om {
+            font-size  : 16px;
+            font-weight: normal;
+            color      : #a0a8b7;
+        }
+    }
+
+    .section-wraper-om {
+        padding: 25px 30px;
+    }
+
+
+    .row-om {
+        margin: 0 -15px;
+
+        @include xs {
+            display: block;
+            margin: 0;
+        }
+        .col-om {
+            padding: 0 15px;
+            width  : (100% /5);
+
+            @include sm {
+                
+                width: (100%/2);
+            }
+
+            @include xs {
+                padding: 0;
+                width: 100%;
+            }
+        }
+    }
+
+    .product-block-om {
+        .product-img-block {
+
+            .show-fast-butt-om {
+                .shape-om {
+                    margin           : 0;
+                    display          : flex;
+                    margin-inline-end: 5.8px;
+                }
+            }
+
+            .cart-fav-block {
+                .butt-om {
+                    &.delete-butt-om {
+
+
+                        .delete-om-1 {
+                            fill        : $h_color_2;
+                            stroke      : $h_color_2;
+                            stroke-width: .1px
+                        }
+
+                        &:hover {
+                            background-color: $color_2;
+
+                            .delete-om-1 {
+                                color : #fff;
+                                fill  : #fff;
+                                stroke: #fff;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+
+    }
+
+
+}

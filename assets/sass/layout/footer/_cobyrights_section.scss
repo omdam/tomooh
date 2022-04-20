@@ -1,0 +1,81 @@
+.copyright-parg-om {
+    color        : #fff;
+    font-size    : 15px;
+    margin-top   : 0;
+    margin-bottom: 0;
+    display      : flex;
+    align-items  : center;
+
+    @include sm {
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+
+    .figure-om {
+        width            : 30px;
+        margin-inline-end: 10px;
+
+        @include sm {
+            width: 20px;
+        }
+    }
+}
+
+.footer-trad-card-nums-block-om {
+    display    : flex;
+    align-items: center;
+    justify-content: center;
+
+    &:not(:last-child) {
+        margin-bottom: 10px;
+    }
+    @include sm {
+        justify-content: center;
+    }
+
+    .text-om {
+        font-size        : 16px;
+        font-weight      : 500;
+        color            : #fff;
+        margin-top       : 0;
+        margin-bottom    : 0;
+        margin-inline-end: 11.9px;
+    }
+
+    .nums-om {
+        font-size    : 14px;
+        font-weight  : 500;
+        color        : #ccdde7;
+        margin-top   : 0;
+        margin-bottom: 0;
+    }
+}
+
+.footer-maroof-om {
+    display       : flex;
+    align-items   : center;
+    flex-direction: row-reverse;
+    font-size     : 16px;
+    font-weight   : 500;
+    color         : #fff;
+    transition    : 0.5s;
+
+    @include sm {
+        justify-content: center;
+        margin-top: 10px;
+
+    }
+    
+    &:hover {
+        color: rgba(#fff, 0.8);
+    }
+
+    .figure-om {
+        width          : 38px;
+        height         : 38px;
+        display        : flex;
+        align-items    : center;
+        justify-content: center;
+        margin-inline-start: 10px;
+    }
+}

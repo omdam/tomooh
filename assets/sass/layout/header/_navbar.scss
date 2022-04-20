@@ -1,0 +1,80 @@
+// nav-om -large sizes
+.nav-om {
+    flex-grow: 1;
+    padding-inline-end: 20px;
+    // display           : flex;
+    // align-items       : center;
+    // justify-content: center;
+
+    @include sm {
+        padding-inline-end: 0;
+    }
+
+    .nav-list-om {
+        display: flex;
+        margin-bottom: 0;
+        justify-content: center;
+
+        @include sm {
+            display: block;
+            width: 100%;
+            padding: 0;
+        }
+
+        > li {
+            > a,
+            > .link-om {
+                font-size: 15px;
+                font-weight: 500;
+                color: $h_color_1;
+                padding: 13px 20px;
+                display: flex;
+                align-items: center;
+
+                &:hover {
+                    color: $color_1;
+                }
+
+                @include sm {
+                    padding: 12px 15px;
+                    border-bottom: 1px solid #e8e8e8;
+
+                    &:hover {
+                        background-color: #e8e8e8;
+                    }
+                }
+
+                &.discount-link-om {
+                    color: #e61b42;
+
+                    &:hover {
+                        color: #e61b42;
+                    }
+                }
+
+                &:hover {
+                    // opacity: 0.7;
+                }
+            }
+        }
+
+        .dropdown-om {
+            .sub-menu-om {
+                min-width: 220px;
+                left: 50%;
+                transform: translateX(-50%);
+                @include dir {
+                    right: unset;
+                }
+
+                &::before {
+                    left: 50%;
+                    transform: translateX(-50%);
+                    @include dir {
+                        right: unset;
+                    }
+                }
+            }
+        }
+    }
+}

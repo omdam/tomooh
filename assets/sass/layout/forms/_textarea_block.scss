@@ -1,0 +1,24 @@
+.textarea-om {
+    height: 162px;
+    border-radius: 10px;
+    border: solid 1px #e8e8e8;
+    background-color: #fff;
+    outline: none;
+    width: 100%;
+    font-size: 14px;
+    font-weight: 300;
+    font-style: normal;
+    color: $h_color_1;
+    padding: 13px 16px;
+    transition: 0.5s;
+    margin-bottom: 15px;
+
+    &:focus,
+    &:hover {
+        border-color: $color_1;
+    }
+
+    &::placeholder {
+        color: rgba(36, 36, 36, 0.65);
+    }
+}

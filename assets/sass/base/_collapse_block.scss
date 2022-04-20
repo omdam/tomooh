@@ -1,0 +1,60 @@
+.collapse-block-om {
+
+    // footer heading
+    .collapse-head-om {
+        position: relative;
+
+        @include sm {
+            cursor: pointer;
+
+            &::after,
+            &::before {
+                content         : "";
+                display         : block;
+                width           : 15px;
+                height          : 3px;
+                background-color: #fff;
+                position        : absolute;
+                top             : 50%;
+                transform       : translateY(-50%);
+                right           : 30px;
+
+                @include dir {
+                    right: unset;
+                    left : 30px;
+                }
+            }
+
+            &::before {
+                transform : translateY(-50%) rotate(90deg);
+                transition: 0.1s;
+            }
+        }
+    }
+
+
+    // .list-collapse-om
+    .list-collapse-om { 
+        @include sm {
+            display: none;
+        }
+    }
+
+    @include sm {
+        &.active {
+
+            // .list-collapse-om
+            .list-collapse-om {
+                @include sm {
+                    display: block;
+                }
+            }
+
+           > .collapse-head-om {
+                &::before {
+                    transform: translateY(-50%) rotate(0);
+                }
+            }
+        }
+    }
+}

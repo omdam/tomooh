@@ -1,0 +1,116 @@
+.sp-search-result-section-om {
+    display: flex;
+    align-items: center;
+
+    @include sm {
+        flex-direction: column;
+        // align-items   : flex-start;
+    }
+
+    .result-head-om {
+        font-size: 14px;
+        font-weight: 500;
+        color: $h_color_2;
+        margin-bottom: 15px;
+        margin-inline-end: 15px;
+
+        @include sm {
+            margin-inline-end: 0;
+        }
+    }
+
+    .fliter-menu-butt {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        display: none;
+
+        @include sm {
+            display: flex;
+        }
+
+        .figure-om {
+            margin-inline-end: 5px;
+        }
+    }
+
+    .sp-search-result-list-om {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+
+        @include sm {
+            justify-content: center;
+        }
+
+        .sp-result-block-om {
+            display: flex;
+            align-items: center;
+            padding: 9px 12px;
+            background-color: #fff;
+            margin-inline-end: 10px;
+            margin-bottom: 15px;
+            border-radius: 20px;
+
+            .close-butt-om {
+                width: 12px;
+                height: 12px;
+                position: relative;
+                top: unset;
+                left: unset;
+                right: unset;
+                bottom: unset;
+                margin-inline-end: 7.5px;
+
+                &::after,
+                &::before {
+                    height: 10px;
+                    width: 1px;
+                    top: 2px;
+                    right: 3px;
+                    background-color: $p_color_2;
+                    transition: 0.5s;
+                }
+
+                &:hover {
+                    &::after,
+                    &::before {
+                        background-color: $color_2;
+                    }
+                }
+            }
+
+            .result-desc-om {
+                line-height: 1;
+                display: flex;
+                align-items: center;
+
+                .head-om {
+                    color: $p_color_2;
+                    font-size: 10px;
+                    font-weight: 300;
+                    margin: 0;
+                    margin-inline-end: 3px;
+                }
+
+                .text-om {
+                    font-size: 12px;
+                    margin: 0;
+                    color: $h_color_2;
+                }
+            }
+        }
+    }
+
+    .remove-all-om {
+        color: $color_2;
+        font-size: 14px;
+        margin-top: 0;
+        margin-bottom: 15px;
+
+        &:hover {
+            color: rgba($color_2, 0.9);
+        }
+    }
+}

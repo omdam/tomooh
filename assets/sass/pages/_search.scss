@@ -1,0 +1,136 @@
+.search-page-section-om {
+    padding-bottom: 90px;
+}
+
+// list-grid-om products
+.spp-products-sec-om {
+    .row-om {
+        margin: 0 -15px;
+
+        @include sm {
+            margin: 0;
+        }
+        .col-om {
+            width: (100%/3);
+            padding: 0 15px;
+
+            @include sm {
+                padding: 0;
+                width: 100%;
+            }
+        }
+
+        &.list-grid-om {
+            display: block;
+            margin: 0;
+
+            @include sm {
+                margin: 0;
+            }
+
+            .col-om {
+                padding: 0;
+                width: 100%;
+
+                @include sm {
+                    width: 100%;
+                }
+            }
+
+            // products
+            .product-block-om {
+                display: flex;
+                align-items: center;
+                margin-bottom: 20px;
+                padding-bottom: 0;
+
+                .product-img-block {
+                    width: 200px;
+                    margin-inline-end: 20px;
+                    flex-shrink: 0;
+                    margin-bottom: 0;
+                }
+
+                .product_parg_ {
+                    margin-bottom: 0;
+                }
+
+                .product-desc-om {
+                    margin-bottom: 0;
+                    max-width: 50%;
+                }
+            }
+        }
+    }
+}
+
+// search-banner-section-om
+.search-banner-section-om {
+    .banner-block-om {
+        .figure-om {
+            padding-bottom: 30%;
+        }
+    }
+}
+
+// sp-filters-section-om
+.sp-filters-section-om {
+    @include sm {
+        padding-top: 50px;
+        position: fixed;
+        top: 0;
+        width: 320px;
+        height: 100%;
+        bottom: 0;
+        overflow-y: auto;
+        left: -320px;
+        transition: 0.5s;
+        background: #fff;
+        z-index: -1;
+
+        @include dir {
+            right: -320px;
+            left: unset;
+        }
+
+        &.active-menu {
+            left: 0;
+            z-index: 1111;
+
+            @include dir {
+                right: 0;
+                left: unset;
+            }
+
+            .close-butt-om {
+                display: block;
+            }
+        }
+    }
+
+    .close-butt-om {
+        display: none;
+
+        @include sm {
+            display: block;
+            background-color: transparent;
+            right: 0;
+            top: 10px;
+            z-index: 111;
+            width: 40px;
+            height: 40px;
+
+            &::before,
+            &::after {
+                background-color: #000;
+                top: 10px;
+                right: 17px;
+            }
+
+            @include dir {
+                right: unset;
+                left: 0;
+            }
+        }
+    }
+}

@@ -1,0 +1,52 @@
+.footer-links-list-om {
+    margin-bottom: 0;
+
+    @include sm {
+        margin-bottom: 20px;
+    }
+
+    .li-om {
+        
+    }
+
+    .link-om {
+        color               : #ccdde7;
+        font-size           : 14px;
+        font-weight         : 300;
+        display             : block;
+        margin-bottom       : 10px;
+        transition          : 0.5s;
+        padding-inline-start: 20px;
+        position            : relative;
+
+      
+
+        &::after {
+            content    : "";
+            width      : 6px;
+            height     : 6px;
+            position   : absolute;
+            top        : 50%;
+            left       : 0;
+            border-top : 1px solid #ccdde7;
+            border-left: 1px solid #ccdde7;
+            transform  : rotate(135deg);
+            transition : 0.5s;
+
+            @include dir {
+                left     : unset;
+                right    : 0;
+                transform: rotate(-45deg);
+            }
+        }
+
+
+        &:hover {
+            color: $color_2;
+
+            &::after {
+                border-color: $color_2;
+            }
+        }
+    }
+}

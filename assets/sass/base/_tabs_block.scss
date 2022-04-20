@@ -1,0 +1,12 @@
+.tabs-block-group-om {
+
+}
+
+.tab-block-om {
+
+    display: none;
+    
+    &.active-om {
+        display: block;
+    }
+}

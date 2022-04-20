@@ -1,0 +1,56 @@
+.single-product-section-om {
+    .row-om {
+        display  : flex;
+        flex-wrap: wrap;
+        margin   : 0 -8px;
+
+        @include sm {
+            margin: 0;
+            display: block;
+        }
+
+        .col-om {
+            padding: 0 8px;
+
+            @include sm {
+                padding: 0;
+                display: block;
+            }
+        }
+
+        .col-1-om {
+            width: 30%;
+
+            
+            @include sm {
+                width: 100%;
+            }
+        }
+
+        .col-2-om {
+            width: 43%;
+
+            
+            @include sm {
+                width: 100%;
+            }
+        }
+
+        .col-3-om {
+            width: 27%;
+
+            
+            @include sm {
+                width: 100%;
+            }
+        }
+    }
+
+   
+}
+
+.main-single-product-page-om {
+    .h-favorite-offers-om {
+        margin-bottom: 25px;
+    }
+}

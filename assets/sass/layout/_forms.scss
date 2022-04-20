@@ -1,0 +1,99 @@
+// .password-group-om {
+//     position: relative;
+
+//     .input-om {
+//         padding-inline-end: 40px;
+//     }
+
+//     .show-password-button-om {
+//         position: absolute;
+//         top: 0;
+//         right: 0;
+//         height: 49px;
+//         display: flex;
+//         align-items: center;
+//         outline: none;
+//         width: 34px;
+//         padding: 0;
+//         background: transparent;
+//         border: none;
+//         cursor: pointer;
+
+//         @include dir {
+//             right: unset;
+//             left: 0;
+//         }
+//         &:focus {
+//             outline: none;
+//         }
+
+//         &.show-om {
+//             .eye-path-cl-om {
+//                 stroke: $color_1 !important;
+//             }
+
+//             .ss-line-through-om {
+//                 display: none !important;
+//             }
+//         }
+//     }
+// }
+
+.label__ {
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.shape_of_input__ {
+    position: relative;
+    .figure-om {
+        position: absolute;
+        top: 50%;
+        left: 9px;
+        transform: translateY(-50%);
+        width: max-content;
+        pointer-events: none;
+
+        @include dir {
+            right: 9px;
+        }
+    }
+
+    .input-om {
+        padding-inline-start: 36px;
+    }
+}
+
+.upload_image_group__ {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-bottom: 20px;
+    margin-top: 30px;
+    cursor: pointer;
+
+    .figure-om {
+        margin-inline-end: 10px;
+        width: 64px;
+        height: 64px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 60%;
+        background-color: #dbe2ed;
+    }
+
+    .text__ {
+        font-size: 14px;
+        color: $color_1;
+    }
+
+    .file_input_ {
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+    }
+}

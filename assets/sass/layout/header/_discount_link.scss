@@ -1,0 +1,20 @@
+.discount-link-om {
+    font-size  : 15px;
+    font-weight: 500;
+    color      : #e61b42;
+    padding    : 13px 20px;
+    display    : flex;
+    align-items: center;
+
+    &:hover {
+        color  : #e61b42;
+        opacity: 0.7;
+    }
+
+    &::before {
+        content          : url("../images/discount.svg");
+        margin-inline-end: 3.2px;
+        max-height       : 17px;
+        max-width        : 17px;
+    }
+}

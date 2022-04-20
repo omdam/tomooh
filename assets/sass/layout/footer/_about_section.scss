@@ -1,0 +1,22 @@
+.footer-about-om {
+    @include sm {
+        padding-bottom: 20px;
+    }
+    .footer-logo-om {
+        width: 190.9px;
+        margin-bottom: 20px;
+
+        @include sm {
+            margin: 0 auto 20px;
+        }
+    }
+
+    .footer-parag-om {
+        line-height: 2.2;
+        width: 62%;
+
+        @include sm {
+            width: 100%;
+        }
+    }
+}

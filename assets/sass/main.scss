@@ -1,0 +1,94 @@
+// abstracts or helpers
+@import "abstracts/variables";
+@import "abstracts/functions";
+@import "abstracts/mixins";
+
+// base
+// @import 'base/normalize';
+@import "base/fonts";
+@import "base/base";
+@import "base/links";
+@import "base/buttons";
+@import "base/overlay";
+@import "base/selection_color";
+@import "base/scroll_bar";
+@import "base/lazy_load";
+@import "base/image_block";
+@import "base/close_button";
+@import "base/collapse_block";
+@import "base/dropdown";
+@import "base/wraper_block";
+@import "base/container_fluid";
+@import "base/modal_section";
+@import "base/tabs_block";
+
+// layout
+@import "layout/header/logo";
+@import "layout/header/search";
+@import "layout/header/personal_data";
+@import "layout/header/toolbar";
+@import "layout/header/all_categories_menu";
+@import "layout/header/navbar";
+@import "layout/header/discount_link";
+@import "layout/header/mega_menu";
+
+@import "layout/header";
+
+@import "layout/footer/contacts_section";
+@import "layout/footer/heading";
+@import "layout/footer/paragraph";
+@import "layout/footer/about_section";
+@import "layout/footer/links_list";
+@import "layout/footer/newsletter";
+@import "layout/footer/app_download";
+@import "layout/footer/socials";
+@import "layout/footer/pay_methods";
+@import "layout/footer/cobyrights_section";
+
+@import "layout/footer";
+
+@import "layout/forms/input_block";
+@import "layout/forms/textarea_block";
+@import "layout/forms/submit_block";
+@import "layout/forms/select_block";
+@import "layout/forms/checkbox_input";
+@import "layout/forms/radio_input";
+
+@import "layout/forms";
+@import "layout/sliders";
+
+//components
+@import "components/site_head_block";
+@import "components/breatcramp";
+@import "components/pagenation";
+@import "components/store_feature";
+@import "components/category_block";
+@import "components/banners";
+@import "components/product_block";
+@import "components/brand_block";
+@import "components/special_product_block";
+@import "components/signin_modal";
+@import "components/show_fast_product_modal";
+@import "components/search_page/filter_block";
+@import "components/search_page/search_result";
+@import "components/search_page/sort_result";
+@import "components/single_product_page/single_product_slider";
+@import "components/single_product_page/single_product_description";
+@import "components/single_product_page/single_product_fetures";
+@import "components/single_product_page/single_product_tabs";
+@import "components/product_whatsapp_link";
+@import "components/cart_product_block";
+@import "components/cart_order_summary";
+@import "components/add_advertise_modaL";
+@import "components/sawalf_post_block";
+
+// pages
+@import "pages/home";
+@import "pages/offers";
+@import "pages/search";
+@import "pages/single_product";
+@import "pages/cart_page";
+@import "pages/empty_pages";
+@import "pages/others_ads";
+@import "pages/sawalf_posts";
+// @import "pages/login_pages";
