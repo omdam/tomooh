@@ -8,6 +8,11 @@
     color: #fff;
     line-height: 1;
     transition: 0.5s;
+    border-radius: 48px;
+
+    @include sm {
+        margin-bottom: 30px;
+    }
 
     .text-om {
         margin-bottom: 5px;

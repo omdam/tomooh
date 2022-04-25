@@ -575,34 +575,49 @@ jQuery(document).ready(function ($) {
 
     /********************************
      *
-     * mixItUp init  *
+     * cart  - increase or decrease Quantity *
      *
      ********************************/
-    // function mixItUpInit() {
-    //     var containerEl = document.querySelector('#mix-container-om');
-    //     var mixer = "";
-    //     if (containerEl) {
 
-    //         mixer = mixitup(containerEl);
-    //         mixer.forceRefresh();
-    //     }
-    // }
-    // mixItUpInit();
+    function change_quantity_value() {
+        $(".quantity_input_group_ .change_quantity_").on("click", function (e) {
+            let quantity_input = $(this).parent().find("input");
+            let input_value = quantity_input.val();
+
+            if ($(this).hasClass("plus__")) {
+                input_value++;
+            } else {
+                input_value--;
+            }
+
+            if (input_value < 1) {
+                input_value = 1;
+            }
+            quantity_input.val(input_value);
+        });
+    }
+
+    change_quantity_value();
 
     /********************************
      *
-     * input file value change  *
+     * checkbox change active  *
      *
      ********************************/
 
-    //  $('.input-file-om ').on('change', function(e) {
-    //      var fileName = " ";
-    //      if (e.target.files[0]) {
-    //          fileName = e.target.files[0].name;
+    $(".checkbox_label_ .radio-om").on("click", function (e) {
+        $(this)
+            .closest(".checkbox_groups_")
+            .children()
+            .find(".checkbox_label_")
+            .removeClass("active");
+        $(this).closest(".checkbox_label_").addClass("active");
+    });
 
-    //      }
-    //      var elementToTakeFileVal = $(this).parent().parent().children(".file-ouput");
+    $(".payment_method_block_").on("click", function (e) {
+        let data_method = $(this).data("method");
 
-    //      elementToTakeFileVal.text(fileName);
-    //  });
+        $(".payment_methods_tabs__ .payment_method_tab_").removeClass("active");
+        $(data_method).addClass("active");
+    });
 });

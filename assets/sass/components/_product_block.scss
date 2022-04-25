@@ -110,6 +110,15 @@
                         }
                     }
                 }
+
+                &.delete-butt-om {
+                    border: navajowhite;
+                    background-color: #e61b42;
+
+                    &:hover {
+                        background-color: rgba(#e61b42, 0.8);
+                    }
+                }
             }
         }
 

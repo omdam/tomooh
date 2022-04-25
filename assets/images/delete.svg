@@ -1,13 +1,9 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="10.78" height="13.235" viewBox="0 0 10.78 13.235">
-    <defs>
-        <style>
-            .delete-om-1{fill:#242424;stroke:#242424;stroke-width:.1px}
-        </style>
-    </defs>
-    <g id="delete" transform="translate(.059 .052)">
-        <path id="Path_629" d="M222.706 154.7a.308.308 0 0 0-.308.308v5.814a.308.308 0 1 0 .615 0v-5.814a.308.308 0 0 0-.307-.308zm0 0" class="delete-om-1" transform="translate(-215.56 -149.946)"/>
-        <path id="Path_630" d="M104.706 154.7a.308.308 0 0 0-.308.308v5.814a.308.308 0 1 0 .615 0v-5.814a.308.308 0 0 0-.307-.308zm0 0" class="delete-om-1" transform="translate(-101.19 -149.946)"/>
-        <path id="Path_631" d="M.87 3.909v7.579a1.7 1.7 0 0 0 .451 1.17 1.515 1.515 0 0 0 1.1.475h5.82a1.514 1.514 0 0 0 1.1-.475 1.7 1.7 0 0 0 .451-1.17V3.909A1.175 1.175 0 0 0 9.49 1.6H7.915v-.386A1.208 1.208 0 0 0 6.7 0H3.965a1.208 1.208 0 0 0-1.218 1.214V1.6H1.172a1.175 1.175 0 0 0-.3 2.311zm7.37 8.609H2.421a.974.974 0 0 1-.935-1.03V3.936h7.69v7.552a.974.974 0 0 1-.935 1.03zM3.362 1.214a.593.593 0 0 1 .6-.6H6.7a.593.593 0 0 1 .6.6V1.6H3.362zm-2.19 1H9.49a.554.554 0 1 1 0 1.107H1.172a.554.554 0 0 1 0-1.107zm0 0" class="delete-om-1"/>
-        <path id="Path_632" d="M163.706 154.7a.308.308 0 0 0-.308.308v5.814a.308.308 0 1 0 .615 0v-5.814a.308.308 0 0 0-.307-.308zm0 0" class="delete-om-1" transform="translate(-158.375 -149.946)"/>
-    </g>
+<svg xmlns="http://www.w3.org/2000/svg" width="16.843" height="20.178" viewBox="0 0 16.843 20.178">
+  <g id="Group_26806" data-name="Group 26806" transform="translate(-330.5 -52.1)">
+    <path id="path" d="M572.508,657v9.167a3.34,3.34,0,0,1-3.34,3.34H563.34a3.34,3.34,0,0,1-3.34-3.34V657" transform="translate(-227.332 -597.729)" fill="none" stroke="#d92525" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+    <path id="path-2" data-name="path" d="M563.844,650.841A1.841,1.841,0,0,1,565.685,649h.592a1.842,1.842,0,0,1,1.841,1.841" transform="translate(-227.137 -596.4)" fill="none" stroke="#d92525" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+    <path id="line" d="M0,0H15.843" transform="translate(331 56.769)" fill="none" stroke="#d92525" stroke-linecap="round" stroke-width="1"/>
+    <line id="line-2" data-name="line" y2="7.432" transform="translate(337.194 60.63)" fill="none" stroke="#d92525" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+    <line id="line-3" data-name="line" y2="7.432" transform="translate(340.91 60.63)" fill="none" stroke="#d92525" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+  </g>
 </svg>

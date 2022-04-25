@@ -72,7 +72,7 @@
 @import "components/search_page/filter_block";
 @import "components/search_page/search_result";
 @import "components/search_page/sort_result";
-@import "components/single_product_page/single_product_slider";
+@import "components/single_product_page/single_product_image_block";
 @import "components/single_product_page/single_product_description";
 @import "components/single_product_page/single_product_fetures";
 @import "components/single_product_page/single_product_tabs";
@@ -87,8 +87,10 @@
 @import "pages/offers";
 @import "pages/search";
 @import "pages/single_product";
-@import "pages/cart_page";
+@import "pages/cart_payment_page";
 @import "pages/empty_pages";
 @import "pages/others_ads";
 @import "pages/sawalf_posts";
+@import "pages/my_account_pages";
+@import "pages/single_page";
 // @import "pages/login_pages";

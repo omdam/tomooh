@@ -1,18 +1,26 @@
 .cart-product-block-om {
-    padding            : 20px;
-    display            : flex;
-    // align-items     : center;
-    background-color   : #fff;
-    margin-bottom      : 30px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    margin-bottom: 30px;
+    border-radius: 10px;
 
     @include xs {
         display: block;
     }
 
     .product-img-block-om {
-        width            : 143px;
-        padding-bottom   : 88.28%;
+        width: 143px;
+        padding-bottom: 88.28%;
         margin-inline-end: 19px;
+        background-color: #f4f4f4;
+
+        img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+        }
 
         @include xs {
             width: 100%;
@@ -25,141 +33,116 @@
         flex-grow: 1;
     }
 
-    .cart-product-title-block-om {
-        display        : flex;
-        align-items    : center;
+    .cart-product-title-block-om,
+    .quantity_delete_warpper__ {
+        display: flex;
+        align-items: center;
         justify-content: space-between;
-        flex-wrap      : wrap;
-        margin-bottom  : 13px;
+        flex-wrap: wrap;
+        margin-bottom: 13px;
+    }
 
-       
+    .quantity_delete_warpper__ {
+        margin-top: 10px;
+        margin-bottom: 0;
     }
 
     .cart-product-title-om {
-        color      : $h_color_2;
-        font-size  : 14px;
+        color: $h_color_2;
+        font-size: 14px;
         font-weight: 500;
+        width: 50%;
+
         @include xs {
+            width: 100%;
             margin-bottom: 10px;
         }
     }
 
     .cart-product-price-om {
-        display    : flex;
+        display: flex;
         align-items: center;
 
         .price-number-om {
-            font-size        : 18px;
-            font-weight      : 500;
-            color            : $color_2;
+            font-size: 18px;
+            font-weight: 500;
+            color: $color_1;
             margin-inline-end: 6.9px;
         }
 
         .price-currency-om {
-            font-size  : 14px;
+            font-size: 14px;
             font-weight: normal;
-            color      : #a0a8b7;
+            color: #a0a8b7;
         }
     }
 
-
     .cart-product-specs-list-om {
         .cart-product-specs-block-om {
-            display      : flex;
-            align-items  : center;
+            display: flex;
+            align-items: center;
             margin-bottom: 10px;
 
             .text-om {
-                font-size        : 14px;
-                font-weight      : normal;
-                color            : $h_color_2;
+                font-size: 14px;
+                font-weight: normal;
+                color: $h_color_2;
                 margin-inline-end: 10px;
             }
 
             .size-om {
-                border-radius  : 4px;
-                border         : solid 1px #3587c6;
-                width          : 24px;
-                height         : 24px;
+                border-radius: 4px;
+                border: solid 1px #3587c6;
+                width: 24px;
+                height: 24px;
                 border-radius: 50%;
-                display        : flex;
-                align-items    : center;
+                display: flex;
+                align-items: center;
                 justify-content: center;
-                font-size      : 14px;
-                font-weight    : normal;
-                color          : $color_2;
+                font-size: 14px;
+                font-weight: normal;
+                color: $color_2;
             }
 
             .color-om {
-                width        : 24px;
-                height       : 24px;
+                width: 24px;
+                height: 24px;
                 border-radius: 50%;
-                padding      : 7px;
+                padding: 7px;
             }
         }
     }
 
     .cart-product-quantity-guarantee-block-om {
-        display      : flex;
-        align-items  : flex-end;
-        margin-top   : -34px;
-        margin-bottom: 10px;
-
-        @include xs {
-            margin-top: -20px;
-        }
-
-        .guarantee-wraper-om {
-            // display: flex;
-            // align-items: center;
-            flex-grow: 1;
-        }
-
-        .year-guarantee-block-om {
-            height           : 36px;
-            background-color : #f5f7fe;
-            display          : flex;
-            align-items      : center;
-            padding          : 5px 9px;
-            margin-inline-end: 12px;
-
-
-            .figure-om {
-                width            : 11px;
-                height           : 16.1px;
-                display          : flex;
-                align-items      : center;
-                justify-content  : center;
-                margin-inline-end: 6.4px;
-            }
-
-            .guarantee-parg-om {
-                font-size  : 11px;
-                font-weight: normal;
-                color      : $h_color_2;
-            }
-        }
+        display: flex;
+        align-items: center;
 
         .quantity-parg-om {
-            font-size  : 14px;
+            font-size: 14px;
             font-weight: normal;
-            color      : $h_color_2;
-        }
-
-        .selct-options-om {
+            color: $h_color_2;
             margin-bottom: 0;
+            margin-top: 0;
+            margin-inline-end: 5px;
+        }
+    }
 
-            .dropdown-toggle {
-                height   : 36px;
-                min-width: 40px;
-                padding  : 7px;
-            }
+    .delete_button__ {
+        background-color: transparent;
+        outline: none !important;
+        border: none !important;
+        color: #d92525;
+        cursor: pointer;
+        font-size: 12px;
+
+        img {
+            height: 19px;
         }
     }
 
     .cart-product-add-to-fav-butt-om {
-        color      : $p_color_1;
-        font-size  : 11px;
+        color: $p_color_1;
+        font-size: 11px;
         font-weight: normal;
 
         .text-om {
@@ -167,15 +150,15 @@
         }
 
         .fav-svg {
-            fill      : none;
-            stroke    : $p_color_1;
+            fill: none;
+            stroke: $p_color_1;
             transition: fill 0.5s ease;
         }
 
         &.favorite-product-active-om {
             .fav-svg {
-                fill      : $p_color_1;
-                stroke    : $p_color_1;
+                fill: $p_color_1;
+                stroke: $p_color_1;
                 transition: fill 0.5s ease;
             }
         }
