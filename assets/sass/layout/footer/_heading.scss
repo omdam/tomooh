@@ -1,4 +1,4 @@
-.footer-head-om {
+.footer-head__ {
     color: #fff;
     font-size: 20px;
     font-weight: 500;
@@ -9,7 +9,7 @@
         text-align: center;
     }
 
-    &.collapse-head-om {
+    &.collapse-head__ {
         @include sm {
             // text-align: center;
             background-color: $color_1_darker;
@@ -19,7 +19,7 @@
     }
 }
 
-.footer-sub-head-om {
+.footer-sub-head__ {
     font-size: 16px;
     font-weight: 500;
     color: #fff;

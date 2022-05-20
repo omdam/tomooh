@@ -1,9 +1,9 @@
 // dropdown menue
-.dropdown-om {
+.dropdown__ {
     position: relative;
 
     > a,
-    > .link-om {
+    > .link__ {
         position: relative;
         display: flex;
         align-items: center;
@@ -21,7 +21,7 @@
         }
     }
 
-    .sub-menu-om {
+    .sub-menu__ {
         list-style: none;
         margin-bottom: 0;
         margin-top: 0;
@@ -61,9 +61,9 @@
             }
         }
 
-        .li-om {
+        .li__ {
             a,
-            .link-om {
+            .link__ {
                 font-size: 14px;
                 font-weight: 300;
                 display: block;
@@ -87,7 +87,7 @@
     }
 
     &:hover {
-        .sub-menu-om {
+        .sub-menu__ {
             visibility: visible;
             opacity: 1;
             z-index: 11;

@@ -1,41 +1,38 @@
-.header-om {
+.header__ {
     // margin-bottom: 0;
     position: relative;
     z-index: 11;
 }
 
-// logo-search-personal-data-om
-.logo-search-personal-data-om {
-    background-color: $color_1;
+.activate_menu_button__  {
+    display: none;
+}
 
-    .ss-wraper-om {
+// logo-search-personal-data__
+.logo-search-personal-data__ {
+    background-color: #fff;
+
+    .ss-wraper__ {
         // border-top: 1px solid rgba(#ffffff, 0.1);
         padding: 20px 0;
     }
 
     // header > logo
-    .header-logo-search-sec-om {
+    .header-logo-search-sec__ {
         display: flex;
         align-items: center;
 
         @include xs {
             flex-direction: column;
         }
-
-        // this > header-logo-om > figure-om > img
     }
-
-    // header > search
-
-    // header > personal_data
 }
 
-// navar-section-om
-.navar-section-om {
-    background-color: #fff;
+// navar-section__
+.navar-section__ {
     position: relative;
-    border-bottom: 1px solid #eaeaed;
-    .close-butt-om {
+
+    .close-butt__ {
         display: none;
 
         @include sm {
@@ -85,13 +82,13 @@
                 left: unset;
             }
 
-            .close-butt-om {
+            .close-butt__ {
                 display: block;
             }
         }
     }
 
-    .nav-warper-om {
+    .nav-warper__ {
         display: flex;
         align-items: center;
 
@@ -107,57 +104,57 @@
     // header > navbar
 
     // collapse block
-    .collapse-block-om {
-        .collapse-head-om {
-            &::after,
-            &::before {
-                background-color: $h_color_1;
-                width: 10px;
-                height: 2px;
-            }
-        }
-    }
+    // .collapse-block__ {
+    //     .collapse-head__ {
+    //         &::after,
+    //         &::before {
+    //             background-color: $h_color_1;
+    //             width: 10px;
+    //             height: 2px;
+    //         }
+    //     }
+    // }
 }
 
-.fixed-header-warper {
-    // search icon in > layout > forms
-    &.active-menu-om,
-    &.not-active-menu-om {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        z-index: 111;
-        box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.04);
-        transition: 0s;
-    }
+// .fixed-header-warper {
+//     // search icon in > layout > forms
+//     &.active-menu__,
+//     &.not-active-menu__ {
+//         position: fixed;
+//         top: 0;
+//         left: 0;
+//         width: 100%;
+//         z-index: 111;
+//         box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.04);
+//         transition: 0s;
+//     }
 
-    &.active-menu-om {
-        animation: active-menu 0.5s;
-    }
+//     &.active-menu__ {
+//         animation: active-menu 0.5s;
+//     }
 
-    &.not-active-menu-om {
-        animation: not-active-menu 0.5s;
-        transform: translateY(-100%);
-    }
-}
+//     &.not-active-menu__ {
+//         animation: not-active-menu 0.5s;
+//         transform: translateY(-100%);
+//     }
+// }
 
-@keyframes active-menu {
-    0% {
-        transform: translateY(-100%);
-    }
+// @keyframes active-menu {
+//     0% {
+//         transform: translateY(-100%);
+//     }
 
-    100% {
-        transform: translateY(0);
-    }
-}
+//     100% {
+//         transform: translateY(0);
+//     }
+// }
 
-@keyframes not-active-menu {
-    0% {
-        transform: translateY(0);
-    }
+// @keyframes not-active-menu {
+//     0% {
+//         transform: translateY(0);
+//     }
 
-    100% {
-        transform: translateY(-100%);
-    }
-}
+//     100% {
+//         transform: translateY(-100%);
+//     }
+// }

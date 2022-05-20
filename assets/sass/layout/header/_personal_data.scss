@@ -1,5 +1,5 @@
 // header personal data section
-.header-personal-data-om {
+.header-personal-data__ {
     display    : flex;
     align-items: center;
 
@@ -7,7 +7,7 @@
         justify-content: center;
     }
 
-    .li-om {
+    .li__ {
         display: inline-flex;
 
         &:not(:last-child) {
@@ -22,7 +22,7 @@
             }
         }
 
-        &.menu-li-om {
+        &.menu-li__ {
             display: none;
 
             @include sm {
@@ -32,7 +32,7 @@
 
     }
 
-    .link-om {
+    .link__ {
         color         : #fff;
         display       : flex;
         align-items   : center;
@@ -45,24 +45,24 @@
             opacity: 0.7;
         }
 
-        .text-om {
+        .text__ {
             @include xxs {
                 display: none;
             }
 
-            &.loged-in-text-om {
+            &.loged-in-text__ {
                 width: 95px;
                 text-overflow: ellipsis;
                 overflow: hidden;
                 white-space: nowrap;
             }
 
-            &.en-text-om {
+            &.en-text__ {
                 direction: ltr;
             }
         }
 
-        .figure-om {
+        .figure__ {
             margin-inline-start: 8px;
 
             @include xxs {
@@ -75,16 +75,16 @@
     }
 
     // login dropdown 
-    .dropdown-om {
+    .dropdown__ {
 
         >a,
-        >.link-om {}
+        >.link__ {}
 
-        .sub-menu-om {
+        .sub-menu__ {
 
             top: 145%;
 
-            .li-om {
+            .li__ {
                 display: block;
 
                 &:not(:last-child) {
@@ -94,8 +94,8 @@
                     }
                 }
 
-                .link-om {
-                    &.sing-out-link-om {
+                .link__ {
+                    &.sing-out-link__ {
                         color: #e61b42;
                         border-top: 1px solid  #e8e8e8;
                         margin-top: 12px;

@@ -1,0 +1,23 @@
+.link_button___ {
+    height: 48px;
+    padding: 5px 21px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $color_1;
+    color: #fff;
+    font-size: 15px;
+    border-radius: 5px;
+    width: max-content;
+    min-width: 150px;
+    font-size: 15px;
+    
+    .figure__ {
+        margin-inline-start: 5px;
+    }
+
+    &:hover {
+        background-color: rgba($color_1, 0.9);
+        color: #fff;
+    }
+}

@@ -1,9 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="73" height="73" viewBox="0 0 73 73">
-  <g id="User_Smal_Circle" data-name="User Smal Circle" transform="translate(1 1)">
-    <g id="_Group_" data-name="&lt;Group&gt;" transform="translate(0.5 0.5)">
-      <circle id="_Path_" data-name="&lt;Path&gt;" cx="9.092" cy="9.092" r="9.092" transform="translate(25.76 15.153)" fill="none" stroke="#034486" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
-      <path id="_Path_2" data-name="&lt;Path&gt;" d="M25.2,13.5A34.913,34.913,0,0,0,9.622,17.652,7.607,7.607,0,0,0,5.5,24.441v1.394a2.818,2.818,0,0,0,2.818,2.849H42.08A2.818,2.818,0,0,0,44.9,25.835V24.441a7.607,7.607,0,0,0-4.122-6.758A34.913,34.913,0,0,0,25.2,13.5Z" transform="translate(9.653 25.898)" fill="none" stroke="#034486" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
-      <circle id="_Path_3" data-name="&lt;Path&gt;" cx="35" cy="35" r="35" fill="none" stroke="#034486" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
-    </g>
-  </g>
-</svg>

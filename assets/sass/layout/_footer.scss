@@ -1,11 +1,11 @@
-.footer-contacts-section-om {
-    background-color: $color_1_darker;
+.footer-contacts-section__ {
+    background-color: #fff;
     padding: 40px 0;
 
     @include sm {
         padding: 30px 0;
     }
-    .footer-row-om {
+    .footer-row__ {
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -14,29 +14,22 @@
             flex-direction: column;
         }
 
-        .col-om {
+        .col__ {
         }
     }
 }
 
-.footer-main-section-om {
+.footer-main-section__ {
     padding: 50px 0;
-    background-color: $color_1;
+    background-color: $color_1_darker;
 
     @include sm {
         padding: 30px 0;
     }
 }
 
-.footer-copyriths-om {
-    background-color: $color_1_darker;
+.footer-copyriths__ {
+    background-color: $color_1;
     padding: 10px 0;
 
-    .row-om {
-        align-items: center;
-        justify-content: space-between;
-
-        .col-om {
-        }
-    }
 }

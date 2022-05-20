@@ -1,11 +1,11 @@
-.toolbar-om {
+.toolbar__ {
 
     background-color: $color_1;
     padding         : 10px 0;
 
-    .ss-wraper-om {}
+    .ss-wraper__ {}
 
-    .tt-contact-om {
+    .tt-contact__ {
         display    : flex;
         align-items: center;
 
@@ -14,7 +14,7 @@
             justify-content: center;
         }
 
-        .li-om {
+        .li__ {
             position: relative;
             display : inline-flex;
 
@@ -49,7 +49,7 @@
             font-weight  : normal;
             font-style   : normal;
 
-            .figure-om {
+            .figure__ {
                 margin-inline-end: 10px;
             }
 
@@ -61,13 +61,13 @@
                 }
             }
 
-            .telphone-om {
+            .telphone__ {
                 direction: ltr;
             }
         }
     }
 
-    .tt-lang-soicial-om {
+    .tt-lang-soicial__ {
         display    : flex;
         align-items: center;
 
@@ -77,7 +77,7 @@
             flex-wrap: wrap;
         }
 
-        .tt-lang-sec-om {
+        .tt-lang-sec__ {
             display: inline-flex;
 
             &::after {
@@ -100,7 +100,7 @@
             }
 
 
-            >.link-om {
+            >.link__ {
                 display       : flex;
                 align-items   : center;
                 flex-direction: row-reverse;
@@ -108,13 +108,13 @@
                 font-size     : 12px;
 
 
-                .figure-om {
+                .figure__ {
                     margin-inline-start: 8px;
                 }
             }
         }
    
-        .tt-social-om {
+        .tt-social__ {
             display      : flex;
             align-items  : center;
             margin-bottom: 0;
@@ -125,7 +125,7 @@
             //     justify-content: center;
             // }
 
-            .link-om {
+            .link__ {
                 transition: 0.5s;
 
                 &:not(:last-child) {
@@ -136,7 +136,7 @@
                     opacity: 0.7;
                 }
 
-                .figure-om {
+                .figure__ {
                     color: #fff;
 
                     svg {
@@ -147,7 +147,7 @@
             }
         }
 
-        .tt-currency-sec-om {
+        .tt-currency-sec__ {
      
         }
     }

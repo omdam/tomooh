@@ -1,9 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
-  <g id="Group_1565" data-name="Group 1565" transform="translate(-8.2 -8.1)">
-    <g id="Icon-Close-O" transform="translate(8.2 8.1)">
-      <path id="Fill-52" d="M-361.8-253.9a8,8,0,0,1-8-8,8,8,0,0,1,8-8,8,8,0,0,1,8,8,8.021,8.021,0,0,1-8,8Zm0-15.163a7.157,7.157,0,0,0-7.13,7.13,7.157,7.157,0,0,0,7.13,7.13,7.157,7.157,0,0,0,7.13-7.13,7.157,7.157,0,0,0-7.13-7.13Z" transform="translate(369.8 269.9)" fill="#e61b42"/>
-      <path id="Fill-53" d="M-357.564-250.1l-.636-.636,7.565-7.565.636.636-7.565,7.565" transform="translate(362.083 262.183)" fill="#e61b42"/>
-      <path id="Fill-54" d="M-350.635-250.1l-7.565-7.565.636-.636,7.565,7.565-.636.636" transform="translate(362.083 262.183)" fill="#e61b42"/>
-    </g>
-  </g>
-</svg>

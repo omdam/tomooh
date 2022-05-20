@@ -1,19 +1,18 @@
-.input-om {
+.input__ {
     height: 48px;
     border-radius: 10px;
-    border: solid 1px #e8e8e8;
+    border: solid 1px #E8E8E8;
     background-color: #fff;
     outline: none;
     width: 100%;
     font-size: 14px;
-    font-weight: 300;
-    font-style: normal;
     color: $h_color_1;
     padding: 13px 16px;
     transition: 0.5s;
     display: flex;
     align-items: center;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
+
     &:focus,
     &:hover {
         border-color: $color_1;

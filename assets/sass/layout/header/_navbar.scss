@@ -1,16 +1,8 @@
-// nav-om -large sizes
-.nav-om {
+// nav__ -large sizes
+.nav__ {
     flex-grow: 1;
-    padding-inline-end: 20px;
-    // display           : flex;
-    // align-items       : center;
-    // justify-content: center;
 
-    @include sm {
-        padding-inline-end: 0;
-    }
-
-    .nav-list-om {
+    .nav-list__ {
         display: flex;
         margin-bottom: 0;
         justify-content: center;
@@ -23,8 +15,8 @@
 
         > li {
             > a,
-            > .link-om {
-                font-size: 15px;
+            > .link__ {
+                font-size: 14px;
                 font-weight: 500;
                 color: $h_color_1;
                 padding: 13px 20px;
@@ -44,7 +36,7 @@
                     }
                 }
 
-                &.discount-link-om {
+                &.discount-link__ {
                     color: #e61b42;
 
                     &:hover {
@@ -58,8 +50,8 @@
             }
         }
 
-        .dropdown-om {
-            .sub-menu-om {
+        .dropdown__ {
+            .sub-menu__ {
                 min-width: 220px;
                 left: 50%;
                 transform: translateX(-50%);

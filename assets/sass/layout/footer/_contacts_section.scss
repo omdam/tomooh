@@ -1,24 +1,24 @@
-.footer-help-om {
+.footer-help__ {
     @include sm {
         margin-bottom: 20px;
     }
-    .title-om {
+    .title__ {
         font-size    : 20px;
         font-weight  : bold;
-        color        : $color_2;
+        color        : $h_color_2;
         margin-top   : 0;
         margin-bottom: 10px;
         line-height  : 1.32;
     }
 
-    .parg-om {
-        color    : #f8fcff;
+    .parg__ {
+        color    : #64696C;
         font-size: 12px;
         margin   : 0;
     }
 }
 
-.footer-contact-info-om {
+.footer-contact-info__ {
     display    : flex;
     align-items: center;
 
@@ -27,13 +27,13 @@
         justify-content: center;
     }
   
-    .li-om {
+    .li__ {
         &:not(:last-child) {
             margin-inline-end: 20px;
         }
     }
 
-    .footer-contact-block-om {
+    .footer-contact-block__ {
         display    : flex;
         align-items: center;
 
@@ -43,19 +43,19 @@
             text-align: center;
         }
 
-        .figure-om {
+        .figure__ {
             width            : 48px;
             height           : 48px;
             display          : flex;
             align-items      : center;
             justify-content  : center;
             border-radius    : 50%;
-            background-color : $color_2;
+            background-color : #2E4E86;
             padding          : 10px;
             margin-inline-end: 10px;
             transition: 0.5s;
             
-            .img-om {}
+            .img__ {}
             
             @include xs {
                 margin-inline-end: 0;
@@ -63,14 +63,14 @@
             }
         }
 
-        .desc-om {
+        .desc__ {
             @include xxs {
                 display: none;
             }
         }
 
-        .contact-title-om {
-            color        : #ccdde7;
+        .contact-title__ {
+            color        : $h_color_2;
             font-size    : 14px;
             margin-top   : 0;
             margin-bottom: 7px;
@@ -81,8 +81,8 @@
             }
         }
 
-        .contact-details-om {
-            color        : #ccdde7;
+        .contact-details__ {
+            color        : $color_1;
             font-size    : 14px;
             font-weight  : 300;
             margin-bottom: 0;
@@ -91,16 +91,16 @@
         }
 
         &:hover {
-            .figure-om {
-                background-color : rgba($color_2,0.9);
+            .figure__ {
+                background-color : rgba(#2E4E86,0.9);
             }
     
-            .contact-title-om {
-                color        : #fff;
+            .contact-title__ {
+                color        : rgba($h_color_2, 0.9);
             }
-    
-            .contact-details-om {
-                color        : #fff;
+            
+            .contact-details__ {
+                color        : rgba($color_1, 0.9);
             }
         }
     }
