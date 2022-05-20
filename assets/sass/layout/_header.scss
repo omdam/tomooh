@@ -2,10 +2,39 @@
     // margin-bottom: 0;
     position: relative;
     z-index: 11;
+
+    .link_button___ {
+        @include sm {
+
+            margin: 0 auto;
+        }
+    }
+}
+
+.header_logo_wrapper__ {
+    @include sm {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
 }
 
 .activate_menu_button__  {
     display: none;
+
+    @include sm {
+        display: block;
+        color: #fff;
+        background-color: $color_1;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
 }
 
 // logo-search-personal-data__
@@ -17,144 +46,5 @@
         padding: 20px 0;
     }
 
-    // header > logo
-    .header-logo-search-sec__ {
-        display: flex;
-        align-items: center;
-
-        @include xs {
-            flex-direction: column;
-        }
-    }
+  
 }
-
-// navar-section__
-.navar-section__ {
-    position: relative;
-
-    .close-butt__ {
-        display: none;
-
-        @include sm {
-            display: none;
-            background-color: rgba($h_color_1, 0.9);
-            right: -40px;
-            top: 0;
-            z-index: 111;
-            width: 40px;
-            height: 40px;
-
-            &::before,
-            &::after {
-                background-color: #fff;
-                top: 10px;
-                right: 17px;
-            }
-
-            @include dir {
-                right: unset;
-                left: -40px;
-            }
-        }
-    }
-
-    @include sm {
-        position: fixed;
-        top: 0;
-        width: 320px;
-        height: 100%;
-        bottom: 0;
-        // overflow-y: auto;
-        left: -320px;
-        transition: 0.5s;
-
-        @include dir {
-            right: -320px;
-            left: unset;
-        }
-
-        &.active-menu {
-            left: 0;
-            z-index: 1111;
-
-            @include dir {
-                right: 0;
-                left: unset;
-            }
-
-            .close-butt__ {
-                display: block;
-            }
-        }
-    }
-
-    .nav-warper__ {
-        display: flex;
-        align-items: center;
-
-        @include sm {
-            display: block;
-            overflow-y: auto;
-            height: 100%;
-        }
-    }
-
-    // header > all_categories
-
-    // header > navbar
-
-    // collapse block
-    // .collapse-block__ {
-    //     .collapse-head__ {
-    //         &::after,
-    //         &::before {
-    //             background-color: $h_color_1;
-    //             width: 10px;
-    //             height: 2px;
-    //         }
-    //     }
-    // }
-}
-
-// .fixed-header-warper {
-//     // search icon in > layout > forms
-//     &.active-menu__,
-//     &.not-active-menu__ {
-//         position: fixed;
-//         top: 0;
-//         left: 0;
-//         width: 100%;
-//         z-index: 111;
-//         box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.04);
-//         transition: 0s;
-//     }
-
-//     &.active-menu__ {
-//         animation: active-menu 0.5s;
-//     }
-
-//     &.not-active-menu__ {
-//         animation: not-active-menu 0.5s;
-//         transform: translateY(-100%);
-//     }
-// }
-
-// @keyframes active-menu {
-//     0% {
-//         transform: translateY(-100%);
-//     }
-
-//     100% {
-//         transform: translateY(0);
-//     }
-// }
-
-// @keyframes not-active-menu {
-//     0% {
-//         transform: translateY(0);
-//     }
-
-//     100% {
-//         transform: translateY(-100%);
-//     }
-// }

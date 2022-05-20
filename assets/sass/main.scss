@@ -31,6 +31,7 @@
 @import "layout/header/personal_data";
 @import "layout/header/toolbar";
 @import "layout/header/navbar"; 
+@import "layout/header/_header_login_name"; 
 
 @import "layout/header";
 
@@ -61,3 +62,8 @@
 @import "pages/_home";
 @import "pages/_sign_jn";
 @import "pages/_forgot_password";
+@import "pages/_packages";
+@import "pages/_payment";
+@import "pages/_trainee_search";
+@import "pages/_jobs_offers";
+@import "pages/_profile";

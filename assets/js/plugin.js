@@ -41,28 +41,29 @@ function preloadImage(img) {
 jQuery(document).ready(function ($) {
     /********************************
      *
-     * upload images file input *
+     * upload in file input *
      *
      ********************************/
 
-    // $(".upload_image_group__ .file_input_").on("change", function (e) {
-    //     let files_data = Array.from($(this)[0].files);
+    $(".file_input_group__ .input_file__").on("change", function (e) {
+        let files_data = Array.from($(this)[0].files);
 
-    //     let files_names_html = "";
+        let files_names_html = "";
 
-    //     files_data.forEach((file) => {
-    //         files_names_html +=
-    //             "<span class='file_name__'>" + file.name + "</span>";
-    //     });
+        files_data.forEach((file) => {
+            files_names_html +=
+                "<span class='file_name__'>" + file.name + "</span>";
+        });
 
-    //     let files_list_div = $(this)
-    //         .closest(".upload_images_wrapper")
-    //         .children()[1];
+        let files_list_div = $(this)
+            .closest(".file_input_group__")
+            .children()[2];
 
-    //     // files_list_div.innerHTML = "";
+            console.log(files_list_div);
+        files_list_div.innerHTML = "";
 
-    //     files_list_div.innerHTML = files_names_html;
-    // });
+        files_list_div.innerHTML = files_names_html;
+    });
 
     /********************************
      *

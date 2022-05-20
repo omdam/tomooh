@@ -1,0 +1,42 @@
+.header_login_name___ {
+    width: max-content;
+    @include sm {
+        margin: 0 auto;
+    }
+    .figure__ {
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        overflow: hidden;
+        margin-inline-end: 10px;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+
+    .loged-in-text__ {
+        color: #242424;
+        font-size: 14px;
+        display: flex;
+        align-items: center;
+
+        &::after {
+            content: url(../images/down.svg);
+            margin-inline-start: 5px;
+        }
+    }
+
+    .sub-menu__ {
+        .li__ {
+        }
+
+        .link__ {
+            &.sing-out-link__ {
+                color: #e61b42;
+            }
+        }
+    }
+}

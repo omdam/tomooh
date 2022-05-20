@@ -1,0 +1,80 @@
+.main_payment_packages__ {
+    .register_form___ {
+        max-width: 570px;
+        padding: 26px 37px;
+
+        @include sm {
+            padding: 20px;
+        }
+    }
+}
+
+.use_via_for_payment__ {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 12px;
+    background-color: #fff;
+    border-radius: 10px;
+    border: 2px solid #c99b45;
+    margin-bottom: 17px;
+    font-size: 16px;
+    color: #252525;
+
+    @include xs {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .figure__ {
+        @include xs {
+            margin-top: 10px;
+        }   
+    }
+}
+
+.input-group__ {
+    .visa__ {
+        position: relative;
+
+        &::after {
+            content: url(../images/payment/visa.svg);
+            position: absolute;
+            top: 50%;
+            transform: translateY(-62%);
+            left: 10px;
+            pointer-events: none;
+
+            @include dir {
+                right: 10px;
+                left: unset;
+            }
+        }
+        .input__ {
+            padding-inline-start: 50px;
+        }
+    }
+
+    .cvv__ {
+        position: relative;
+
+        &::after {
+            content: url(../images/payment/code.svg);
+            position: absolute;
+            top: 50%;
+            transform: translateY(-45%);
+            left: 15px;
+            pointer-events: none;
+
+            @include dir {
+                right: 15px;
+                left: unset;
+            }
+        }
+
+        .input__ {
+            padding-inline-start: 40px;
+        }
+    }
+}

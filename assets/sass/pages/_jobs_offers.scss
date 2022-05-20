@@ -1,0 +1,166 @@
+.job_accept_or_refuse_buttons__{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @include sm {
+        display: block;
+    }
+    
+    .link_button___ {
+        min-width: 160px;
+        margin-top: 20px;
+        border: 1px solid transparent;
+
+        @include sm {
+            margin: 10px auto  !important;
+            margin-top: 10px;
+        }
+
+        @include xs {
+            width: 100%;
+        }
+
+        &:not(:last-child) {
+            margin-inline-end: 15px;
+
+            @include sm {
+                margin-inline-end: 0;
+            }
+        }
+
+        &.refuse_butt__ {
+            color: #E63C10;
+            background-color: #F7F7FA;
+            border:1px solid  #E63C10;
+
+            &:hover {
+                background-color: #E63C10;
+                color: #fff;
+            }
+        }
+    }
+}
+
+.job_offer_block__ {
+    padding: 20px;
+    border-radius: 25px;
+    margin-bottom: 20px;
+
+    .job_title__ {
+        color: #ADADAD;
+        font-size: 14px;
+        margin-bottom: 5px;
+
+    }
+
+    .job_offer_title__ {
+        color: #242424;
+        font-size: 22px;
+        font-weight: 500;
+        margin-bottom: 11px;
+
+        .link__ {
+            color: inherit;
+            font-size: inherit;
+
+            &:hover {
+                color: $color_1;
+            }
+        }
+    }
+
+    .info_list__ {
+        display: flex;
+        flex-wrap: wrap;
+        width: 70%;
+        padding-bottom: 10px;
+
+        @include sm {
+            display: block;
+            width: 100%;
+        }
+
+        .li__ {
+            display: flex;
+            align-items: center;
+            padding-inline-end: 10px;
+            width: 50%;
+            margin-bottom: 14px;
+
+            @include sm {
+                width: 100%;
+            }
+        }
+        .figure__ {
+            margin-inline-end: 10px;
+            flex-shrink: 0;
+        }
+        
+        .text__ {
+            font-size: 14px;
+            color: #292929;
+        }
+    }
+    
+    .job_description__ {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding: 14px 0;
+        border-bottom: 1px solid #CBCBCB;
+        border-top: 1px solid #CBCBCB;
+
+        @include sm {
+            margin-bottom: 20px;
+            display: block;
+        }
+
+        .li__ {
+            margin-bottom: 10px;
+        }
+
+        .s_head_ {
+            display: block;
+            font-size: 14px;
+            margin-bottom: 9px;
+            color: #ADADAD;
+
+            @include sm {
+                margin-bottom: 3px;
+            }
+        }
+        
+        .s_detail_ {
+            display: block;
+            color: #242424;
+            font-size: 14px;
+        }
+
+    }
+}
+
+.main_job_offer_single__ {
+    .job_description__ {
+        border-bottom: none;
+        padding-bottom: 0;
+
+    }
+}
+
+.single_offer_description {
+    border-radius: 25px;
+    margin-bottom: 20px;
+    padding: 20px;
+    
+    .head__ {
+        font-size: 14px;
+        color: #ADADAD;
+        margin-bottom: 16px;
+    }
+    .parg__ {
+        margin-bottom: 8px;
+        font-size: 13px;
+        color: #242424;
+    }
+}

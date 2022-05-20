@@ -22,27 +22,31 @@
     }
 
     .sub-menu__ {
+        border-radius: 10px;
         list-style: none;
         margin-bottom: 0;
         margin-top: 0;
         display: table;
         position: absolute;
         top: 115%;
-        left: -15px;
         background-color: #fff;
         z-index: -1;
         min-width: 140px;
-        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
-        padding: 10px 0 15px;
+        padding: 0;
         border: none;
         transform-origin: center 0;
         transition: 0.5s;
         visibility: hidden;
         opacity: 0;
         transition: 0.5s;
+        right: 0;
+        left: unset;
+        box-shadow: 0px 3px 8px 0px rgba(0,0,0,0.16);
+
 
         @include dir {
-            right: -15px;
+            left: 0;
+            right: unset;
         }
 
         &::before {
@@ -53,15 +57,19 @@
             border-style: solid;
             border-width: 0px 6px 6px 6px;
             border-color: #fff transparent;
-            left: 12px;
+            right: 23px;
+            left: unset;
 
             @include dir {
-                left: unset;
-                right: 12px;
+                right: unset;
+                left: 23px;
             }
         }
 
         .li__ {
+            &:not(:last-child) {
+                border-bottom: 1px solid #E8E8E8;
+            }
             a,
             .link__ {
                 font-size: 14px;
@@ -71,7 +79,7 @@
                 text-transform: capitalize;
                 transition: 0.5s;
                 color: $h_color_2;
-                padding: 5px 15px;
+                padding: 15px 19px;
 
                 &:hover {
                     color: $color_1;
